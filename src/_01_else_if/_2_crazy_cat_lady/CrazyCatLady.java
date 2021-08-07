@@ -16,7 +16,7 @@ public class CrazyCatLady {
 		 if (catsi >= 3) {
 			 System.out.println("you are a crazy cat lady");
 		 }
-		 else if(catsi <= 3) {
+		 else if(catsi <= 3 && catsi > 0) {
 		playVideo("https://www.youtube.com/watch?v=2QMeGkbdIVw")	;
 		 }
 		 else if(catsi == 0) {
