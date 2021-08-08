@@ -18,7 +18,7 @@ public class HighLowGame {
 		// 1. Ask the user for a guess using a pop-up window, and save their response 
 		int random = new Random().nextInt(100);
 		System.out.println(random);
-		
+	
 		for (int i = 0; i < 10; i++) {
 		String guess = JOptionPane.showInputDialog ("Enter a number between 1-100");
 		int guessi = Integer.parseInt(guess);	
@@ -29,10 +29,12 @@ public class HighLowGame {
 		else if (guessi <= random) {
 			JOptionPane.showMessageDialog(null, "Higher");
 		}
-		else if (guessi >= random) {
+		else if (guessi >= random) { 
 			JOptionPane.showMessageDialog(null, "Lower");
 		}
-
+		int count = 9-i;
+		JOptionPane.showMessageDialog(null, "You have " + count + " guesses left");
+		
 		}
 		// 4. Convert the users’ answer to an int (Integer.parseInt(string))
 			
