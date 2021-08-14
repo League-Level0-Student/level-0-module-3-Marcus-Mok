@@ -6,7 +6,15 @@ import org.jointheleague.graphical.robot.Robot;
 public class WalkOfFame {
 	public static void main(String[] args) {
 		Robot rob = new Robot();
+		rob.penDown();
+		rob.setSpeed(100);
+		rob.setPenWidth(10);
 		
+		rob.moveTo(300, 300);
+		for(int i = 0; i < 5; i++) {
+			rob.turn(144);
+			rob.move(200);
+		}
 		// 1. Set the X position of the robot so that it starts on the left. 
 		// You also need to show the robot to see the result of this line.
 
