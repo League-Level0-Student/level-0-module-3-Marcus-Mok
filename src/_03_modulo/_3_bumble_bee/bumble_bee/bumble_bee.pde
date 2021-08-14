@@ -9,7 +9,16 @@ void setup() {
 void draw() {
   
 // First run the program and you should see a flower.  
-  
+  for(int i = 1; 43 >= i; i++){
+if (i % 2 == 0) {
+     fill(255, 255, 0);
+    }
+    else {
+      fill(0);
+    }
+ellipse(0+i*10,0+ i*10,50,50);   
+}
+drawBeeFace(440,440);
   
 /* Then, use a loop to make a body for the Bee! 
 (see the image on the recipe, it's a diagonal line of circles)
